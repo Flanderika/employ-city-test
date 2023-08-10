@@ -106,15 +106,15 @@
   }
   .select2-results__options {
     scrollbar-width: thin;
-    scrollbar-color: #1e202a;
+    scrollbar-color: $havelockBlue;
     &::-webkit-scrollbar {
       width: 7px;
       height: 7px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: #3e9cdc;
-      outline: 1px solid #3e9cdc;
+      background-color: $havelockBlue;
+      outline: 1px solid $havelockBlue;
       border-radius: 50px;
     }
 
