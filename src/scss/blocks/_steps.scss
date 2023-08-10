@@ -1,0 +1,12 @@
+.steps {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  overflow: hidden;
+
+  @media #{$screen-mobile-only} {
+    flex-direction: column;
+  }
+}

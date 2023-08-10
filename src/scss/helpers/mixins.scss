@@ -1,0 +1,105 @@
+// Resets
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin resetting-vertical-indentation-of-first {
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin resetting-vertical-indentation-of-last {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin resetting-horizontal-indentation-of-first {
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+@mixin resetting-horizontal-indentation-of-last {
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin hidden-element {
+  position: absolute;
+
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+// Text
+@mixin text-huge($font-weight: null) {
+  $font-size: $font-size-huge;
+
+  font-size: rem($font-size);
+  font-weight: $font-weight;
+}
+
+@mixin text-bigest($font-weight: null) {
+  $font-size: $font-size-bigest;
+
+  font-size: rem($font-size);
+  font-weight: $font-weight;
+}
+
+@mixin text-big($font-weight: null) {
+  $font-size: $font-size-big;
+
+  font-size: rem($font-size);
+  font-weight: $font-weight;
+}
+
+@mixin text-average($font-weight: null) {
+  $font-size: $font-size-average;
+
+  font-size: rem($font-size);
+  font-weight: $font-weight;
+}
+
+@mixin text-middling($font-weight: null) {
+  $font-size: $font-size-middling;
+
+  font-size: rem($font-size);
+  font-weight: $font-weight;
+}
+
+@mixin text-normal($font-weight: null) {
+  $font-size: $font-size-normal;
+
+  font-size: rem($font-size);
+  font-weight: $font-weight;
+}
+
+@mixin text-medium($font-weight: null) {
+  $font-size: $font-size-medium;
+
+  font-size: rem($font-size);
+  font-weight: $font-weight;
+}
+
+@mixin text-small($font-weight: null) {
+  $font-size: $font-size-small;
+
+  font-size: rem($font-size);
+  font-weight: $font-weight;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

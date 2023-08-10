@@ -1,0 +1,106 @@
+// Color https://chir.ag/projects/name-that-color
+$black: #000000;
+$charade: #272733;
+$shark: #2a2b30;
+$brightGray: #3d4050;
+$stormGray: #6f6d7b;
+
+$white: #ffffff;
+$silver: #c3c3c3;
+$silver2: #bbbbbb;
+$pictonBlue: #42a9ed;
+$pictonBlue2: #43abf0;
+$havelockBlue: #3e9cdc;
+
+$headerBg: #10101de6;
+$burgerBg: #20202De6;
+$inputsBg: #ffffffd9;
+
+$color-text-primary: $white;
+$color-text-primary-alternate: $black;
+$color-text-secondary: $silver;
+$color-text-tertiary: $pictonBlue;
+
+$color-link: $white;
+$color-link-hover: $pictonBlue2;
+
+$color-primary: $black;
+
+$bg-color: $brightGray;
+$bg-header: $headerBg;
+$bg-inputs: $inputsBg;
+
+// Font
+$font-family-default: "Helvetica", sans-serif;
+$font-family-custom: "Lato";
+$font-family-custom-alternate: "Raleway";
+
+$font-family: $font-family-custom, $font-family-default;
+$font-family-alternate: $font-family-custom-alternate, $font-family-default;
+
+$font-path: "../assets/fonts/";
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+$font-size-huge: 48px;
+$font-size-bigest: 36px;
+$font-size-big: 28px;
+$font-size-average: 20px;
+$font-size-middling: 18px;
+$font-size-normal: 16px;
+$font-size-medium: 15px;
+$font-size-small: 13px;
+
+$font-size-base: $font-size-normal;
+
+$border-radius: 8px;
+$border-radius-small: 4px;
+
+$border-size: 1px;
+$border-size-bigger: 2px;
+
+$border-default: $border-size solid $white;
+$border-secondary: $border-size solid $stormGray;
+$border-dropdown: $border-size solid $brightGray;
+$border-tertiary: $border-size-bigger solid $havelockBlue;
+
+// Shadow
+$box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
+$button-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+
+// Breakpoints
+$screen-desktop-huge: "(min-width: 1921px)";
+$screen-desktop-large: "(min-width: 1440px)";
+$screen-desktop: "(min-width: 1280px)";
+$screen-laptop: "(min-width: 1024px)";
+$screen-tablet: "(min-width: 768px)";
+
+$screen-device-only: "(max-width: 1279px)";
+$screen-small-device-only: "(max-width: 1023px)";
+$screen-mobile-only: "(max-width: 767px)";
+
+$gap-very-big: 80px;
+$gap-big: 60px;
+$gap-average: 40px;
+$gap-mid: 38px;
+$gap-middling: 30px;
+$gap-normal: 20px;
+$gap-medium: 15px;
+$gap-small: 12px;
+$gap-smaller: 10px;
+$gap-smallest: 5px;
+
+// Transition
+
+$transition-duration: 0.3s;
+$transition-function: ease-in-out;
+
+
+// z-index
+$z-index-step-bullets: 1;
+$z-index-step-circle: 5;
+$z-index-header: 10;
+$z-index-modal: 20;

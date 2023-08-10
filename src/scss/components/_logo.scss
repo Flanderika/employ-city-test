@@ -1,0 +1,27 @@
+.logo {
+  font-family: $font-family-alternate;
+  @include text-big($font-weight-bold);
+
+  text-transform: uppercase;
+
+  transition: color $transition-duration $transition-function;
+
+  @media #{$screen-small-device-only} {
+    @include text-average($font-weight-bold);
+  }
+
+  @media #{$screen-mobile-only} {
+    @include text-normal($font-weight-bold);
+  }
+
+  &:hover & {
+    &__link-important {
+      color: $color-text-primary;
+    }
+  }
+  &__link-important {
+    transition: color $transition-duration $transition-function;
+
+    color: $color-text-tertiary;
+  }
+}

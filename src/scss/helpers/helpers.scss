@@ -1,0 +1,15 @@
+.hidden {
+  display: none !important;
+
+  &-desk {
+    @media (min-width: 767px) {
+      display: none !important;
+    }
+  }
+
+  &-mob {
+    @media #{$screen-mobile-only} {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.icon {
+  &--webmoney,
+  &--yandex-money,
+  &--qiwi,
+  &--vk,
+  &--mail,
+  &--file {
+    $size: 20px;
+
+    width: rem($size);
+    height: rem($size);
+  }
+
+  &--search,
+  &--percent,
+  &--file-plus,
+  &--message,
+  &--money {
+    $size: 55px;
+
+    width: rem($size);
+    height: rem($size);
+  }
+}

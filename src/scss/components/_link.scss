@@ -1,0 +1,8 @@
+.link {
+  transition: color $transition-duration $transition-function;
+  
+  color: $color-link;
+  &:hover {
+    color: $color-link-hover;
+  }
+}

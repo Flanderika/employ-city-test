@@ -1,0 +1,151 @@
+.custom-range {
+  display: flex;
+  flex-direction: column;
+  gap: rem($gap-normal);
+
+  width: 100%;
+
+  &--size {
+    &-huge {
+      $size: 770px;
+
+      max-width: rem($size);
+
+      @media #{$screen-mobile-only} {
+        max-width: none;
+      }
+    }
+
+    &-big {
+      $size: 370px;
+
+      max-width: rem($size);
+
+      @media #{$screen-mobile-only} {
+        max-width: none;
+      }
+    }
+
+    &-normal {
+      $size: 183px;
+
+      max-width: rem($size);
+
+      @media #{$screen-mobile-only} {
+        max-width: none;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: rem($gap-smaller);
+
+    &--between {
+      justify-content: space-between;
+    }
+  }
+
+  &__control {
+    width: 100%;
+
+    height: rem(8px);
+    background: transparent;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 23px;
+      height: 23px;
+
+      cursor: pointer;
+
+      border-radius: 1em;
+      background: #42a9ed;
+      border: 3px solid #286690;
+      box-shadow: none;
+      margin-top: calc(
+        max((8px - 1px - 1px) * 0.5, 0px) - max(23px * 0.5, 3px)
+      );
+    }
+
+    &::-webkit-slider-runnable-track {
+      height: 8px;
+      border: 1px solid #ffffff;
+      border-radius: 0.5em;
+      background: #ffffffb3;
+      box-shadow: none;
+    }
+
+    &::-moz-range-thumb {
+      width: max(calc(23px - 3px - 3px), 0px);
+      height: max(calc(23px - 3px - 3px), 0px);
+      border-radius: 1em;
+      background: #42a9ed;
+      border: 3px solid #286690;
+      box-shadow: none;
+    }
+
+    &::-moz-range-track {
+      height: max(calc(8px - 1px - 1px), 0px);
+      border: 1px solid #ffffff;
+      border-radius: 0.5em;
+      background: #ffffffb3;
+      box-shadow: none;
+    }
+
+    &::-moz-range-thumb:hover {
+      background: #286690;
+      border-color: #42a9ed;
+    }
+
+    &::-moz-range-thumb:active {
+      background: #286690;
+    }
+
+    &::-ms-fill-upper {
+      background: transparent;
+      border-color: transparent;
+    }
+
+    &::-ms-fill-lower {
+      background: transparent;
+      border-color: transparent;
+    }
+
+    &::-ms-thumb {
+      width: 23px;
+      height: 23px;
+      border-radius: 1em;
+      background: #42a9ed;
+      border: 3px solid #286690;
+      box-shadow: none;
+      margin-top: 0;
+      box-sizing: border-box;
+    }
+
+    &::-ms-track {
+      height: 8px;
+      border-radius: 0.5em;
+      background: #ffffffb3;
+      border: 1px solid #ffffff;
+      box-shadow: none;
+      box-sizing: border-box;
+    }
+
+    &::-ms-thumb:hover {
+      background: #286690;
+      border-color: #42a9ed;
+    }
+
+    &::-ms-thumb:active {
+      background: #286690;
+    }
+  }
+}

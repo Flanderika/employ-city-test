@@ -1,0 +1,31 @@
+.form {
+  &__row {
+    display: flex;
+    gap: rem($gap-middling);
+
+    margin-top: rem($gap-middling);
+
+    @include resetting-vertical-indentation-of-first;
+
+    &--col {
+      flex-direction: column;
+      &-sm {
+        @media #{$screen-small-device-only} {
+          flex-direction: column;
+        }
+      }
+      &-m {
+        @media #{$screen-mobile-only} {
+          flex-direction: column;
+        }
+      }
+    }
+
+    &--submit {
+      justify-content: center;
+      gap: rem($gap-average);
+
+      margin-top: rem($gap-average);
+    }
+  }
+}

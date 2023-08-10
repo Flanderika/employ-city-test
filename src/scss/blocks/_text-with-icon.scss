@@ -1,0 +1,10 @@
+.text-with-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem($gap-smaller);
+
+  &__icon {
+    flex-shrink: 0;
+  }
+}

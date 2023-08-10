@@ -1,0 +1,8 @@
+.container {
+  padding: 0 $gap-medium;
+
+  &__wrapper {
+    max-width: rem(1170px);
+    margin: 0 auto;
+  }
+}

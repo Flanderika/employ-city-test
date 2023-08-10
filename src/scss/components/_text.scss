@@ -1,0 +1,175 @@
+.text {
+  &--size {
+    &-huge {
+      @include text-huge();
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          @include text-huge();
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          @include text-huge();
+        }
+      }
+    }
+
+    &-bigest {
+      @include text-bigest();
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          @include text-bigest();
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          @include text-bigest();
+        }
+      }
+    }
+
+    &-big {
+      @include text-big();
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          @include text-big();
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          @include text-big();
+        }
+      }
+    }
+
+    &-average {
+      @include text-average();
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          @include text-average();
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          @include text-average();
+        }
+      }
+    }
+
+    &-middling {
+      @include text-middling();
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          @include text-middling();
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          @include text-middling();
+        }
+      }
+    }
+
+    &-normal {
+      @include text-normal();
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          @include text-normal();
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          @include text-normal();
+        }
+      }
+    }
+
+    &-medium {
+      @include text-medium();
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          @include text-medium();
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          @include text-medium();
+        }
+      }
+    }
+
+    &-small {
+      @include text-small();
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          @include text-small();
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          @include text-small();
+        }
+      }
+    }
+  }
+
+  &--weight {
+    &-regular {
+      font-weight: $font-weight-regular;
+    }
+
+    &-semibold {
+      font-weight: $font-weight-semibold;
+    }
+
+    &-bold {
+      font-weight: $font-weight-bold;
+    }
+
+    &-extrabold {
+      font-weight: $font-weight-extrabold;
+    }
+  }
+
+  &--color {
+    &-silver {
+      color: $silver;
+    }
+
+    &-silver2 {
+      color: $silver2;
+    }
+
+    &-black {
+      color: $black;
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &__important {
+    color: $havelockBlue;
+  }
+}

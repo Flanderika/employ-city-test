@@ -1,0 +1,141 @@
+.custom-select {
+  @include text-middling();
+
+  width: 100%;
+  height: rem(48px);
+
+  color: $charade;
+
+  &--size {
+    &-huge {
+      $size: 777px;
+
+      max-width: rem($size);
+
+      @media #{$screen-mobile-only} {
+        max-width: none;
+      }
+    }
+
+    &-big {
+      $size: 370px;
+
+      max-width: rem($size);
+
+      @media #{$screen-mobile-only} {
+        max-width: none;
+      }
+    }
+
+    &-normal {
+      $size: 183px;
+
+      max-width: rem($size);
+
+      @media #{$screen-mobile-only} {
+        max-width: none;
+      }
+    }
+  }
+
+  &__control {
+    width: 100%;
+  }
+
+  .select2-container {
+    width: 100% !important;
+    height: 100%;
+
+    .select2-selection {
+      display: flex;
+      align-items: center;
+
+      height: 100%;
+      padding: 0 rem($gap-smaller);
+
+      border: $border-default;
+      background-color: $inputsBg;
+
+      .select2-selection__placeholder {
+        color: inherit;
+      }
+
+      .select2-selection__rendered {
+        padding-left: 0;
+
+        color: inherit;
+      }
+      .select2-selection__arrow {
+        top: 50%;
+        right: rem(10px);
+
+        width: initial;
+        height: initial;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    .select2-dropdown {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .select2-container--open {
+    color: $white;
+
+    .select2-selection {
+      border-color: $brightGray;
+      background-color: $brightGray;
+    }
+
+    .select2-selection__arrow-icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.select2-container.select2-container--default.select2-container--open {
+  .select2-dropdown {
+    border: $border-dropdown;
+    background-color: $charade;
+  }
+  .select2-results {
+    padding: rem(3px) rem(3px) rem(3px) 0;
+  }
+  .select2-results__options {
+    &::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #3e9cdc;
+      outline: 1px solid #3e9cdc;
+      border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #3d4050;
+      border-radius: $border-radius;
+    }
+  }
+  @-moz-document url-prefix() {
+    .select2-results__options {
+      scrollbar-width: thin;
+      scrollbar-color: #1e202a;
+    }
+  }
+  .select2-results__option {
+    @include text-middling();
+
+    padding: rem($gap-smaller);
+
+    &--selected,
+    &--highlighted {
+      background-color: transparent;
+      color: $color-link-hover;
+    }
+  }
+}

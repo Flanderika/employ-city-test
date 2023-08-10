@@ -1,0 +1,19 @@
+.list {
+  &--resetted {
+    @include list-reset;
+  }
+
+  &--unordered {
+    list-style-type: "- ";
+
+    margin: 0;
+    padding-left: rem(26px);
+  }
+  &--unordered & {
+    &__item {
+      margin-top: rem($gap-smallest);
+
+      @include resetting-vertical-indentation-of-first;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.section {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--hero {
+    min-height: rem(850px);
+    padding: rem(202px) 0;
+
+    background-image: image-set(
+      url("/src/assets/images/hero-bg.webp") type("image/webp"),
+      url("/src/assets/images/hero-bg.png") type("image/png")
+    );
+    background-position: center;
+
+    @media #{$screen-small-device-only} {
+      min-height: 0;
+    }
+
+    @media #{$screen-mobile-only} {
+      padding: rem(84px) 0 rem(28px) 0;
+
+      background-position: left;
+    }
+  }
+
+  &--checkout {
+    padding: rem(56px) 0 rem(151px) 0;
+
+    background-color: $charade;
+    background-image: image-set(
+      url("/src/assets/images/checkout-bg.webp") type("image/webp"),
+      url("/src/assets/images/checkout-bg.png") type("image/png")
+    );
+
+    @media #{$screen-mobile-only} {
+      padding: rem(56px) 0;
+    }
+  }
+
+  &__block {
+    margin-top: rem($gap-very-big);
+
+    @include resetting-vertical-indentation-of-first;
+
+    @media #{$screen-mobile-only} {
+      margin-top: rem($gap-average);
+    }
+
+    &--medium {
+      max-width: rem(780px);
+    }
+    &--small {
+      max-width: rem(555px);
+    }
+    &--centered {
+      margin: 0 auto;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: rem($gap-middling);
+
+    margin-top: rem($gap-middling);
+
+    @include resetting-vertical-indentation-of-first;
+
+    &--gap {
+      &-smaller {
+        gap: $gap-smaller;
+
+        margin-top: $gap-smaller;
+      }
+    }
+
+    &--centered {
+      justify-content: center;
+    }
+  }
+}

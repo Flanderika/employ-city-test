@@ -1,0 +1,582 @@
+.grid {
+  &__row {
+    display: flex;
+
+    &-sm {
+      @media #{$screen-small-device-only} {
+        display: flex;
+      }
+    }
+
+    &-m {
+      @media #{$screen-mobile-only} {
+        display: flex;
+      }
+    }
+
+    &--between {
+      justify-content: space-between;
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          justify-content: space-between;
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          justify-content: space-between;
+        }
+      }
+    }
+
+    &--centered {
+      justify-content: center;
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          justify-content: center;
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          justify-content: center;
+        }
+      }
+    }
+
+    &--items-centered {
+      align-items: center;
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          align-items: center;
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          align-items: center;
+        }
+      }
+    }
+
+    &--wrap {
+      flex-wrap: wrap;
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          flex-wrap: wrap;
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          flex-wrap: wrap;
+        }
+      }
+    }
+
+    &--col {
+      flex-direction: column;
+
+      &-sm {
+        @media #{$screen-small-device-only} {
+          flex-direction: column;
+        }
+      }
+
+      &-m {
+        @media #{$screen-mobile-only} {
+          flex-direction: column;
+        }
+      }
+    }
+
+    &--gap {
+      &-very-big {
+        gap: $gap-very-big;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-very-big;
+          }
+        }
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-very-big;
+          }
+        }
+      }
+
+      &-big {
+        gap: $gap-big;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-big;
+          }
+        }
+
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-big;
+          }
+        }
+      }
+
+      &-average {
+        gap: $gap-average;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-average;
+          }
+        }
+
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-average;
+          }
+        }
+      }
+
+      &-mid {
+        gap: $gap-mid;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-mid;
+          }
+        }
+
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-mid;
+          }
+        }
+      }
+
+      &-middling {
+        gap: $gap-middling;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-middling;
+          }
+        }
+
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-middling;
+          }
+        }
+      }
+
+      &-normal {
+        gap: $gap-normal;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-normal;
+          }
+        }
+
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-normal;
+          }
+        }
+      }
+
+      &-medium {
+        gap: $gap-medium;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-medium;
+          }
+        }
+
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-medium;
+          }
+        }
+      }
+
+      &-small {
+        gap: $gap-small;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-small;
+          }
+        }
+
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-small;
+          }
+        }
+      }
+
+      &-smaller {
+        gap: $gap-smaller;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-smaller;
+          }
+        }
+
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-smaller;
+          }
+        }
+      }
+
+      &-smallest {
+        gap: $gap-smallest;
+
+        &-sm {
+          @media #{$screen-small-device-only} {
+            gap: $gap-smallest;
+          }
+        }
+
+        &-m {
+          @media #{$screen-mobile-only} {
+            gap: $gap-smallest;
+          }
+        }
+      }
+
+      &-x {
+        &-very-big {
+          column-gap: $gap-very-big;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-very-big;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-very-big;
+            }
+          }
+        }
+
+        &-big {
+          column-gap: $gap-big;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-big;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-big;
+            }
+          }
+        }
+
+        &-average {
+          column-gap: $gap-average;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-average;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-average;
+            }
+          }
+        }
+
+        &-mid {
+          column-gap: $gap-mid;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-mid;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-mid;
+            }
+          }
+        }
+
+        &-middling {
+          column-gap: $gap-middling;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-middling;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-middling;
+            }
+          }
+        }
+
+        &-normal {
+          column-gap: $gap-normal;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-normal;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-normal;
+            }
+          }
+        }
+
+        &-medium {
+          column-gap: $gap-medium;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-medium;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-medium;
+            }
+          }
+        }
+
+        &-small {
+          column-gap: $gap-small;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-small;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-small;
+            }
+          }
+        }
+
+        &-smaller {
+          column-gap: $gap-smaller;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-smaller;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-smaller;
+            }
+          }
+        }
+
+        &-smallest {
+          column-gap: $gap-smallest;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              column-gap: $gap-smallest;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              column-gap: $gap-smallest;
+            }
+          }
+        }
+      }
+
+      &-y {
+        &-very-big {
+          row-gap: $gap-very-big;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-very-big;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-very-big;
+            }
+          }
+        }
+
+        &-big {
+          row-gap: $gap-big;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-big;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-big;
+            }
+          }
+        }
+
+        &-average {
+          row-gap: $gap-average;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-average;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-average;
+            }
+          }
+        }
+
+        &-mid {
+          row-gap: $gap-mid;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-mid;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-mid;
+            }
+          }
+        }
+
+        &-middling {
+          row-gap: $gap-middling;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-middling;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-middling;
+            }
+          }
+        }
+
+        &-normal {
+          row-gap: $gap-normal;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-normal;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-normal;
+            }
+          }
+        }
+
+        &-medium {
+          row-gap: $gap-medium;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-medium;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-medium;
+            }
+          }
+        }
+
+        &-small {
+          row-gap: $gap-small;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-small;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-small;
+            }
+          }
+        }
+
+        &-smaller {
+          row-gap: $gap-smaller;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-smaller;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-smaller;
+            }
+          }
+        }
+
+        &-smallest {
+          row-gap: $gap-smallest;
+
+          &-sm {
+            @media #{$screen-small-device-only} {
+              row-gap: $gap-smallest;
+            }
+          }
+
+          &-m {
+            @media #{$screen-mobile-only} {
+              row-gap: $gap-smallest;
+            }
+          }
+        }
+      }
+    }
+  }
+}
